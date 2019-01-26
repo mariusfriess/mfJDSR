@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(0,0,0,0.87);
+}
+
+#root{
+  height: inherit;
+  width: inherit;
+}
+
+.routeComponent{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+
+  .section{
+    padding: 24px 16px 8px;
+
+    h1{
+      margin: 0 0 10px;
+      font-weight: 400;
+      font-size: 1.5em;
+    }
+
+    .content{
+
+    }
+  }
+}
+
+.underDevelopment{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  svg{
+    transform: scale(2.8);
+    margin-bottom: 8px;
+  }
+
+  h1, h2{
+    text-align: center;
+    font-weight: 400;
+  }
+
+  h2{
+    margin: 0;
+    font-size: 1em;
+  }
+}
+
+.beta{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 8px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  font-size: .8em;
+  background-color: #2196F3;
+  border-bottom-left-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+
+// COLORS
+.c1{border-left: rgba(#001f3f, 0.9) 10px solid !important}
+.c2{border-left: rgba(#0074D9, 0.9) 10px solid !important}
+.c3{border-left: rgba(#7FDBFF, 0.9) 10px solid !important}
+.c4{border-left: rgba(#39CCCC, 0.9) 10px solid !important}
+.c5{border-left: rgba(#3D9970, 0.9) 10px solid !important}
+.c6{border-left: rgba(#2ECC40, 0.9) 10px solid !important}
+.c7{border-left: rgba(#01FF70, 0.9) 10px solid !important}
+.c8{border-left: rgba(#FFDC00, 0.9) 10px solid !important}
+.c9{border-left: rgba(#FF851B, 0.9) 10px solid !important}
+.c10{border-left: rgba(#FF4136, 0.9) 10px solid !important}
+.c11{border-left: rgba(#85144b, 0.9) 10px solid !important}
+.c12{border-left: rgba(#F012BE, 0.9) 10px solid !important}
+.c13{border-left: rgba(#B10DC9, 0.9) 10px solid !important}
+.c14{border-left: rgba(#111111, 0.9) 10px solid !important}

@@ -1,0 +1,89 @@
+.section{
+  .changeSchedule{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    -webkit-tap-highlight-color: transparent;
+
+    > div{
+      flex: 1;
+      margin: 0 6px;
+      height: 46px;
+      border-radius: 8px;
+      cursor: pointer;
+      user-select: none;
+      transition: all .2s linear;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:first-child{
+        margin-left: 0;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+      &:hover{
+        background-color: rgba(0,0,0,0.03);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
+      }
+
+      &.active{
+        background-color: rgba(0,0,0,0.06);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
+      }
+    }
+  }
+
+  .scheduleSubject{
+    height: 40px;
+    padding: 8px 10px;
+    border-left: rgba(0,116,217,.9) 10px solid;
+    border-radius: 8px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
+    transition: transform .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+
+    &:last-child{
+      margin: 0;
+    }
+
+    .header, .subheader{
+      display: block;
+      font-weight: 500;
+    }
+
+    .header{
+      font-size: 1em;
+      margin: 0 0 2px;
+    }
+
+    .subheader{
+      font-size: .8em;
+    }
+  }
+
+  .task{
+    padding: 16px 10px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
+    margin: 0 0 8px;
+
+    span.title{
+      text-align: center;
+      display: inline-block;
+    }
+  }
+}
